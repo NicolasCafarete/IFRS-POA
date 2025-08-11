@@ -1,4 +1,4 @@
-# ⚜️ Exercícios da Faculdade
+# ⚜️ Repositório de Estudos - IFRS
 
 Esta pasta contém os exercícios realizados ao longo das disciplinas da faculdade. Aqui organizo atividades, projetos e estudos de diferentes matérias, visando facilitar a revisão e o acompanhamento do meu aprendizado.
 
@@ -17,4 +17,5 @@ Esta pasta contém os exercícios realizados ao longo das disciplinas da faculda
 ---
 
 Sinta-se à vontade para acompanhar meu desenvolvimento acadêmico por aqui!
+
 
