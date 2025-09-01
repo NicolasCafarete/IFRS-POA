@@ -1,0 +1,184 @@
+
+/* ---------------------------- INICIO ------------------------------------------- /*
+
+/* Estilos gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b4b6fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container principal do currículo */
+.curriculo-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a foto de perfil */
+.fotoperfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid #333;
+}
+
+/* Estilos para os títulos */
+h1, h2, h3 {
+    text-align: center;
+    color: #000000;
+    border-bottom: 2px solid #00000017;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #000000;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos para listas */
+ul, ol {
+    line-height: 1.6;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #047cfc;
+    font-weight: bold;
+}
+
+.github{
+    width: 75px; /* Tamanho do ícone do LinkedIn */
+    height: 75px;
+    margin-left: 20px; /* Adiciona um espaço entre as duas imagens */
+}
+
+.linkedin{
+    width: 75px; /* Tamanho do ícone do LinkedIn */
+    height: 75px;
+    margin-left: 20px; /* Adiciona um espaço entre as duas imagens */
+}
+
+
+/* ---------------------------- CONTATO ------------------------------------------- */
+
+/* Container principal do currículo - Fundo branco */
+.pagina-contatos {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; /* Fundo branco */
+    padding: 30px;
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    box-shadow: none; /* Remove a sombra para um visual mais limpo */
+}
+
+
+/* Estilos para o formulário de contato */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os campos */
+    margin-top: 0;
+}
+
+/* Agrupa a label e o input, empilhando-os */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 8px;
+    border: 1px solid #000; /* Borda preta */
+    border-radius: 4px;
+    width: 100%; /* Garante que a caixa de texto ocupe toda a largura */
+    box-sizing: border-box; /* O padding não aumenta a largura total */
+}
+
+.form-group textarea {
+    resize: none; /* Impede o redimensionamento da caixa de texto */
+}
+
+.submit-btn {
+    padding: 8px 15px;
+    background-color: #fff; /* Fundo branco para o botão */
+    color: #000; /* Texto preto */
+    border: 1px solid #000; /* Borda preta */
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* -------------------------- PROJETOS ---------------------------- */
+
+.pagina-projetos {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; /* Fundo branco */
+    padding: 30px;
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    box-shadow: none; /* Remove a sombra para um visual mais limpo */
+}
+
+
+/* Media query para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.2em; /* aumenta o tamanho da fonte em telas pequenas */
+    }
+
+    header {
+        text-align: center; /* centraliza o cabeçalho */
+    }
+
+    section {
+        padding: 15px; /* diminui o padding das seções */
+    }
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}

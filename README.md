@@ -1,4 +1,4 @@
-# ⚜️ Repositório de Estudos - IFRS
+ # ⚜️ Repositório de Estudos - IFRS
 
 Esta pasta contém os exercícios realizados ao longo das disciplinas da faculdade. Aqui organizo atividades, projetos e estudos de diferentes matérias, visando facilitar a revisão e o acompanhamento do meu aprendizado.
 
