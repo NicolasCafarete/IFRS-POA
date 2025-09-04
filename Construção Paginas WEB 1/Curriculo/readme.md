@@ -10,8 +10,6 @@ Abaixo está uma captura de tela do meu currículo online:
 
 ![Screenshot do Currículo](img/image.png)
 
-> Substitua `caminho/para/screenshot.png` pelo nome do arquivo da imagem que você adicionar ao repositório.
-
 ## 🔨 Estrutura do Projeto
 
 O projeto foi organizado em seções para facilitar a navegação e a atualização do conteúdo:
