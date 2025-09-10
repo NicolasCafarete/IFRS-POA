@@ -47,8 +47,5 @@ O CSS garante que o layout seja **limpo, legível e responsivo**, adaptando-se a
 - Servir como referência ou modelo para futuros projetos de portfólio  
 
 ---
-
-*Algumas informações podem estar desatualizadas, esse é o primeiro esboço, irei atualiza-lo em outro momento.*
-
 [def]: img/curriculo2.png  
 [def2]: img/curriculo1.png
