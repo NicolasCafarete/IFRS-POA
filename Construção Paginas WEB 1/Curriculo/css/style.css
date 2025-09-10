@@ -1,184 +1,226 @@
+/* ---------------------------- GERAL ------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
-/* ---------------------------- INICIO ------------------------------------------- /*
-
-/* Estilos gerais da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #b4b6fa;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #6e8dfb, #a1b8ff);
+  color: #2f3640;
+  margin: 0;
+  padding: 20px;
 }
 
-/* Container principal do currículo */
+/* ---------------------------- CONTAINER PRINCIPAL ---------------------------- */
 .curriculo-container {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 85%;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo para a foto de perfil */
+.curriculo-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.16);
+}
+
+/* ---------------------------- FOTO PERFIL ------------------------------------ */
 .fotoperfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
-    border: 4px solid #333;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 25px;
+  border: 4px solid #40739e;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para os títulos */
+/* ---------------------------- TÍTULOS ---------------------------------------- */
 h1, h2, h3 {
-    text-align: center;
-    color: #000000;
-    border-bottom: 2px solid #00000017;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #000000;
+  font-size: 2.6em;
+  font-weight: 600;
+  color: #40739e;
+}
+
+h2 {
+  font-size: 1.9em;
+  color: #2f3640;
+  margin-top: 40px;
+  border-bottom: 2px solid #40739e;
+  padding-bottom: 8px;
+  display: inline-block;
 }
 
 h3 {
-    font-size: 1.2em;
-    font-weight: normal;
-    font-style: normal;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #555;
+  margin: 20px 0 10px;
 }
 
-/* Estilos para listas */
+/* ---------------------------- LISTAS ------------------------------------------ */
 ul, ol {
-    line-height: 1.6;
+  line-height: 1.8;
+  padding-left: 20px;
 }
 
-/* Estilos para a barra de navegação */
+/* ---------------------------- NAVBAR ----------------------------------------- */
 .navbar {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    margin: 20px 0;
+  list-style: none;
+  text-align: center;
+  padding: 12px 0;
+  margin: 30px 0;
+  background-color: #91b3d396;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 .navbar li {
-    display: inline-block;
-    margin: 0 15px;
+  display: inline-block;
+  margin: 0 25px;
+  position: relative;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #047cfc;
-    font-weight: bold;
+  text-decoration: none;
+  color: #40739e;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 8px 15px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
 }
 
-.github{
-    width: 75px; /* Tamanho do ícone do LinkedIn */
-    height: 75px;
-    margin-left: 20px; /* Adiciona um espaço entre as duas imagens */
+.navbar a:hover {
+  background-color: rgba(64, 115, 158, 0.15);
+  transform: translateY(-2px);
 }
 
-.linkedin{
-    width: 75px; /* Tamanho do ícone do LinkedIn */
-    height: 75px;
-    margin-left: 20px; /* Adiciona um espaço entre as duas imagens */
+/* Linha animada abaixo do link ao hover */
+.navbar a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #ffdd59;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
-
-/* ---------------------------- CONTATO ------------------------------------------- */
-
-/* Container principal do currículo - Fundo branco */
-.pagina-contatos {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff; /* Fundo branco */
-    padding: 30px;
-    border-radius: 8px; /* Bordas levemente arredondadas */
-    box-shadow: none; /* Remove a sombra para um visual mais limpo */
+.navbar a:hover::after {
+  width: 100%;
 }
 
+/* Link ativo */
+.navbar a.active {
+  background-color: rgba(64, 115, 158, 0.15);
+}
 
-/* Estilos para o formulário de contato */
+/* ---------------------------- ÍCONES ------------------------------------------ */
+.github, .linkedin {
+  width: 45px;
+  height: 45px;
+  margin: 0 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.github:hover, .linkedin:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* ---------------------------- FORMULÁRIO -------------------------------------- */
+.pagina-contatos, .pagina-projetos {
+  width: 85%;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Espaço entre os campos */
-    margin-top: 0;
-}
-
-/* Agrupa a label e o input, empilhando-os */
-.form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .form-group label {
-    font-weight: bold;
-    margin-bottom: 1px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #2f3640;
 }
 
-.form-group input,
-.form-group textarea {
-    padding: 8px;
-    border: 1px solid #000; /* Borda preta */
-    border-radius: 4px;
-    width: 100%; /* Garante que a caixa de texto ocupe toda a largura */
-    box-sizing: border-box; /* O padding não aumenta a largura total */
+.form-group input, .form-group textarea {
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  background-color: #f7f8fa;
+  color: #2f3640;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s, box-shadow 0.3s;
 }
 
-.form-group textarea {
-    resize: none; /* Impede o redimensionamento da caixa de texto */
+.form-group input:focus, .form-group textarea:focus {
+  border-color: #40739e;
+  box-shadow: 0 0 12px rgba(64,115,158,0.25);
+  outline: none;
 }
 
 .submit-btn {
-    padding: 8px 15px;
-    background-color: #fff; /* Fundo branco para o botão */
-    color: #000; /* Texto preto */
-    border: 1px solid #000; /* Borda preta */
-    border-radius: 4px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 12px 20px;
+  background-color: #40739e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .submit-btn:hover {
-    background-color: #f0f0f0;
+  background-color: #2f5d7f;
+  transform: translateY(-2px);
 }
 
-/* -------------------------- PROJETOS ---------------------------- */
-
-.pagina-projetos {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff; /* Fundo branco */
-    padding: 30px;
-    border-radius: 8px; /* Bordas levemente arredondadas */
-    box-shadow: none; /* Remove a sombra para um visual mais limpo */
-}
-
-
-/* Media query para telas com largura máxima de 768px */
+/* ---------------------------- RESPONSIVIDADE ---------------------------------- */
 @media (max-width: 768px) {
-    body {
-        font-size: 1.2em; /* aumenta o tamanho da fonte em telas pequenas */
-    }
+  body {
+    font-size: 1em;
+    padding: 10px;
+  }
 
-    header {
-        text-align: center; /* centraliza o cabeçalho */
-    }
+  .curriculo-container, .pagina-contatos, .pagina-projetos {
+    width: 95%;
+    padding: 20px;
+  }
 
-    section {
-        padding: 15px; /* diminui o padding das seções */
-    }
+  h1 {
+    font-size: 2em;
+  }
 }
 
-
+/* ---------------------------- IMAGENS ----------------------------------------- */
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }

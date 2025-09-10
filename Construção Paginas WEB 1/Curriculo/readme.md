@@ -6,9 +6,24 @@ O objetivo é mostrar um exemplo de projeto prático em HTML/CSS, mostrando como
 
 ## 🖼️ Screenshot
 
-Abaixo está uma captura de tela do meu currículo online:
+Projeto Currículo Antigo:  
+![Currículo Antigo][def2]
 
-![Screenshot do Currículo](img/image.png)
+Projeto Currículo ATUAL:  
+![Currículo Atual][def]
+
+## 🔄 Melhorias e Atualizações
+
+Comparando o **Currículo Antigo** com a versão **Atual**, implementamos diversas melhorias visuais e funcionais:
+
+- 🎨 **Design Moderno:** fundo em gradiente, bordas arredondadas e sombras suaves para os blocos.  
+- ✍️ **Tipografia:** uso da fonte Inter, mais moderna e legível.  
+- 📌 **Navbar Interativa:** links com hover animado e linha de destaque.  
+- 👤 **Foto de Perfil:** com `object-fit` e sombra para destaque profissional.  
+- 🔗 **Ícones de Redes Sociais:** animação em hover (cinza → colorido + leve zoom).  
+- 📝 **Formulário de Contato:** campos arredondados, foco azul e interface mais amigável.  
+- 📱 **Responsividade Aprimorada:** layout adaptável para celulares e tablets.  
+- 🧩 **Organização Visual:** seções consistentes, títulos claros e espaçamento adequado.
 
 ## 🔨 Estrutura do Projeto
 
@@ -33,4 +48,7 @@ O CSS garante que o layout seja **limpo, legível e responsivo**, adaptando-se a
 
 ---
 
-*Algumas informações podem estar desatualizadas, esse é o primeiro esboço, irei atualiza-lo em outro momento.
+*Algumas informações podem estar desatualizadas, esse é o primeiro esboço, irei atualiza-lo em outro momento.*
+
+[def]: img/curriculo2.png  
+[def2]: img/curriculo1.png
